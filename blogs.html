@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/59fd1c1de4.js" crossorigin="anonymous"></script>    
+    <!-- media query -->
+    <link rel="stylesheet" href="media-query.css">
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,200;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stanford University</title>
+</head>
+<body>
+    <!-- section about -->
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="header-logo" class="header-logo"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fas fa-times" onclick="hideMenu()"><!--close--></i>
+                <ul>
+                    <li><a class="active" href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blogs.html">BLOGS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"><!--menu--></i>
+        </nav>
+
+            <h1 class="whitepara">Our Certificate <span class="and-color">&</span> Online Programs For 2021</h1>
+        
+    </section>
+
+    <!--Blog page Content  -->
+    
+    <section class="blog-content section80per1 margin-tp-bt">
+        <div class="row">
+            <div class="blog-left">
+                <img src="images/certificate.jpg" class="image-lift-anime" title="Certificate" alt="Student-with-Certificate">
+                <h2>Our Certificate <span class="and-color">&</span> Online Programs For 2021</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda repellendus, earum ab, facilis minima repudiandae sunt ullam eos labore soluta commodi at. Fugiat veniam fugit temporibus praesentium aut, sit exercitationem.
+                Consectetur fuga nulla illum modi, voluptatibus tenetur mollitia consequatur aperiam quod est nobis minima quos, in error repudiandae et, porro deserunt nemo asperiores veniam officia. Vero quidem pariatur quo eum.
+                Aut excepturi voluptas ex ullam placeat eum odit quod voluptatibus sapiente cum ipsum, repudiandae quasi ad, voluptatum recusandae cumque perspiciatis? Quaerat sunt placeat ad facere. Ducimus ut voluptate itaque praesentium.</p>
+                <br>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda repellendus, earum ab, facilis minima repudiandae sunt ullam eos labore soluta commodi at. Fugiat veniam fugit temporibus praesentium aut, sit exercitationem.
+                    Consectetur fuga nulla illum modi, voluptatibus tenetur mollitia consequatur aperiam quod est nobis minima quos, in error repudiandae et, porro deserunt nemo asperiores veniam officia. Vero quidem pariatur quo eum.
+                    Aut excepturi voluptas ex ullam placeat eum odit quod voluptatibus sapiente cum ipsum, repudiandae quasi ad, voluptatum recusandae cumque perspiciatis? Quaerat sunt placeat ad facere. Ducimus ut voluptate itaque praesentium.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore voluptatum modi architecto cupiditate adipisci, non dicta sequi quasi eveniet quo odit eum esse, natus cumque reiciendis amet, hic soluta assumenda.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore voluptatum modi architecto cupiditate adipisci, non dicta sequi quasi eveniet quo odit eum esse, natus cumque reiciendis amet, hic soluta assumenda.
+                </p>
+
+                <div class="comment-box">
+                    <h3>Leave a Comment</h3>
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="Email" placeholder="Enter Email">
+                        <textarea rows="10" placeholder="Add your Comment..!"></textarea>
+                        <button class="red-btn hero-btn">POST COMMENT</button>
+                    </form>
+                </div>
+            </div>
+            <div class="blog-right">
+                <h3>Post Categories</h3>
+                <div class="box-shadow">
+                    <span>Business Analytics</span>
+                    <span>21</span>
+                </div>
+                <div class="box-shadow">
+                    <span>Data Science</span>
+                    <span>28</span>
+                </div>
+                <div class="box-shadow">
+                    <span>Machine Learning</span>
+                    <span>15</span>
+                </div>
+                <div class="box-shadow">
+                    <span>Computer Science</span>
+                    <span>25</span>
+                </div>
+                <div class="box-shadow">
+                    <span>Auto CAD</span>
+                    <span>27</span>
+                </div>
+                <div class="box-shadow">
+                    <span>B.Sc Mathematics</span>
+                    <span>35</span>
+                </div>
+                <div class="box-shadow">
+                    <span>Photography</span>
+                    <span>30</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+<!--java scripts for nav bar-->
+<script>
+    var navlinks= document.getElementById("navlinks");
+    function showMenu(){
+        navlinks.style.right="0px";
+        // navlinks.style.transition="all .2s"; did on my own with js.
+    }
+    function hideMenu(){
+        navlinks.style.right="-200px";
+
+    }
+</script>
+</body>
+</html>

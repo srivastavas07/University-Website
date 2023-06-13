@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/59fd1c1de4.js" crossorigin="anonymous"></script>    
+    <!-- media query -->
+    <link rel="stylesheet" href="media-query.css">
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,200;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stanford University</title>
+</head>
+<body>
+    <!-- section about -->
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="header-logo" class="header-logo"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fas fa-times" onclick="hideMenu()"><!--close--></i>
+                <ul>
+                    <li><a class="active" href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blogs.html">BLOGS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"><!--menu--></i>
+        </nav>
+
+            <h1>Contact Us</h1>
+        
+    </section>
+    <!-- Contact us Content Map vgerah! -->
+    <section class="location section80per margin-top">
+        <iframe src=
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.6140545842177!2d81.04790011441463!3d26.852225169157062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399be2496846a6ed%3A0x125a5ffab9061e23!2sAmity%20University%20Lucknow%20Campus!5e0!3m2!1sen!2sin!4v1628277371955!5m2!1sen!2sin"
+         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    </section>
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fas fa-home"></i>
+                    <span>
+                        <h5>Amity University</h5>
+                        <p class="contact-details">Lucknow Campus 226010 U.P</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fas fa-phone"></i>
+                    <span>
+                        <h5>+91 6388835366</h5>
+                        <p class="contact-details">Monday to Saturday 10A.M to 6P.M</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="far fa-envelope"></i>
+                    <span>
+                        <h5><a href="connatecoder07@gmail.com" class="creator">
+                            connatecoders07@gmail</a></h5>
+                        <p class="contact-details">Email us for Query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="">
+                    <input type="text" placeholder="Enter your name" required>
+                    <input type="Email" placeholder="Enter your email address" required>
+                    <input type="text" placeholder="Enter your subject" required>
+                    <textarea placeholder="Your message" rows="10" required></textarea>
+                    <button type="submit" class="hero-btn red-btn">SEND MESSAGE</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+<!--footer-->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p class="blackpara">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Quas quisquam nam <br>rerum, vel ad eaque dolores commodi 
+            libero corporis temporibus. Fugiat,dignissimos! Nisi, <br> 
+            laudantium quidem. Omnis recusandae porro ea ut?</p>
+            <div class="icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-linkedin-in"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+            <p class="creator-para blackpara">Made with<i class="far fa-heart"></i>by <a class="creator" href="https://www.connatecoders.com/">ConnateCoders</a></p>
+    </section>
+
+
+
+<!--java scripts for nav bar-->
+<script>
+    var navlinks= document.getElementById("navlinks");
+    function showMenu(){
+        navlinks.style.right="0px";
+        // navlinks.style.transition="all .2s"; did on my own with js.
+    }
+    function hideMenu(){
+        navlinks.style.right="-200px";
+
+    }
+</script>
+</body>
+</html>

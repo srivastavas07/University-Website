@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/59fd1c1de4.js" crossorigin="anonymous"></script>    
+    <!-- media query -->
+    <link rel="stylesheet" href="media-query.css">
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,200;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stanford University</title>
+</head>
+<body>
+    <!-- section about -->
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="header-logo" class="header-logo"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fas fa-times" onclick="hideMenu()"><!--close--></i>
+                <ul>
+                    <li><a class="active" href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blogs.html">BLOGS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"><!--menu--></i>
+        </nav>
+
+            <h1>About Us</h1>
+        
+    </section>
+
+    <!-- about us content -->
+    <section class="about-us">
+        <div class="row"><!--already has the display flex property-->
+            <div class="about-col">
+                <h1 class="margin-bottom-30px">We are World's Largest University</h1>
+                <p class="blackpara">     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem ipsa
+                        veritatis nostrum molestiae distinctio rem ut ad quis voluptate ratione
+                        libero harum quibusdam itaque cum neque, voluptas labore officiis laudantium!
+                        Corrupti accusantium recusandae tempora quos? Aperiam, blanditiis. Voluptas amet 
+                        nostrum unde sit rem natus voluptatibus impedit dolores perspiciatis ullam, excepturi
+                        tempore nesciunt temporibus mollitia corrupti similique quibusdam illum omnis animi?</p>
+                        <a href="#" class="hero-btn red-btn" title="Know More">Explore Now</a>
+            </div>
+            <div class="about-col">
+                <img src="images/about.jpg" class="image-lift-anime" title="About us" alt="About-us">
+            </div>
+        </div>
+    </section>
+
+<!--footer-->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p class="blackpara">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Quas quisquam nam <br>rerum, vel ad eaque dolores commodi 
+            libero corporis temporibus. Fugiat,dignissimos! Nisi, <br> 
+            laudantium quidem. Omnis recusandae porro ea ut?</p>
+            <div class="icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-linkedin-in"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+            <p class="creator-para blackpara">Made with<i class="far fa-heart"></i>by <a class="creator" href="https://www.connatecoders.com/">ConnateCoders</a></p>
+    </section>
+
+
+
+<!--java scripts for nav bar-->
+<script>
+    var navlinks= document.getElementById("navlinks");
+    function showMenu(){
+        navlinks.style.right="0px";
+        // navlinks.style.transition="all .2s"; did on my own with js.
+    }
+    function hideMenu(){
+        navlinks.style.right="-200px";
+
+    }
+</script>
+</body>
+</html>
